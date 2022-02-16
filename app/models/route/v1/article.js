@@ -1,12 +1,10 @@
 const express = require('express');
-
-// ルーティングするで
 const router = express.Router();
 
-// routerにルーティングの動作を書いてく
-router.get('/', function (req, res) {
+// GET http://localhost:3000/api/v1/article/test
+router.get('/test', function (req, res) {
   res.json({
-    message: 'Hello, world',
+    message: 'This is article api',
   });
 });
 
